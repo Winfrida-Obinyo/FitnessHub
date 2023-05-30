@@ -66,3 +66,13 @@ function updateCarousel() {
 
 // Initial update to show the first image
 updateCarousel();
+
+
+const images = document.querySelectorAll('.animated-image');
+
+images.forEach((image, index) => {
+  const delay = index * 400;
+  setTimeout(() => {
+    image.classList.add('animate');
+  }, delay);
+});
