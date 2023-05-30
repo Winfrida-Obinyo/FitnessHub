@@ -1,0 +1,49 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .products img {
+  
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    margin: 10px;
+    animation: zoomAnimation 4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes zoomAnimation {
+    0% {
+      transform: scale(1);
+    }
+    90% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+    
+  }
+  .hands{
+    text-align: center;
+    color: darkorange;
+    font-size: xx-large;
+  }
+  .discover{
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+    
+  }
+  @media (max-width: 768px) {
+    .products img {
+      margin: 5px;
+    }
+    
+    .hands, .discover {
+      font-size: medium;
+    }
+  }
+  
