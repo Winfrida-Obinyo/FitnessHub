@@ -1,3 +1,23 @@
+const fitnessNav = document.querySelector('.fitness-nav');
+
+const options = {
+  rootMargin: '-50px 0px 0px 0px',
+  threshold: 0.5
+};
+
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      fitnessNav.classList.add('animate');
+    } else {
+      fitnessNav.classList.remove('animate');
+    }
+  });
+}, options);
+
+observer.observe(fitnessNav);
+
+
 // Get the carousel element
 const carousel = document.querySelector('.carousel');
 // Apply styles to the carousel
@@ -67,6 +87,7 @@ function updateCarousel() {
 // Initial update to show the first image
 updateCarousel();
 
+
 // Access the elements by their class names
 var subtitle = document.querySelector('.home__subtitle');
 var title = document.querySelector('.home__title');
@@ -118,3 +139,14 @@ handleMediaQuery(mediaQuery);
 
 // Add a listener for media query changes
 mediaQuery.addListener(handleMediaQuery);
+
+
+const images = document.querySelectorAll('.animated-image');
+
+images.forEach((image, index) => {
+  const delay = index * 400;
+  setTimeout(() => {
+    image.classList.add('animate');
+  }, delay);
+});
+
