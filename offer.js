@@ -1,3 +1,23 @@
+const fitnessNav = document.querySelector('.fitness-nav');
+
+const options = {
+  rootMargin: '-50px 0px 0px 0px',
+  threshold: 0.5
+};
+
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      fitnessNav.classList.add('animate');
+    } else {
+      fitnessNav.classList.remove('animate');
+    }
+  });
+}, options);
+
+observer.observe(fitnessNav);
+
+
 // Get the carousel element
 const carousel = document.querySelector('.carousel');
 // Apply styles to the carousel
