@@ -1,3 +1,54 @@
+.fitness-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fitness-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fitness-nav li {
+  margin: 0 10px;
+}
+
+.fitness-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color:white;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.fitness-nav a:hover {
+  color: #f00;
+}
+
+.fitness-nav a:hover i {
+  font-size: 24px;
+}
+
+.fitness-nav a:hover span {
+  font-size: 16px;
+}
+
+.fitness-nav i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.fitness-nav span {
+  font-size: 14px;
+  text-transform: uppercase;
+}
 .products {
     display: flex;
     flex-wrap: wrap;
