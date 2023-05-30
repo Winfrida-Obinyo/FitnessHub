@@ -4,6 +4,237 @@
     justify-content: center;
     align-items: center;
   }
+  *{
+    margin: 0;
+    padding: 0;
+  }:root {
+    --header-height: 3.5rem;
+    --body-font: 'Red Hat Display', sans-serif;
+  }
+  body {
+    background-color: #F2F2F2;
+  background-image: url(gym.jpg);
+    background-size: cover;
+    background: linear-gradient();
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+   
+  }
+  
+  .home{
+    position: relative;
+    padding-bottom: 0;
+  }
+  .home__container{
+    /* padding-top: 4rem; */
+    row-gap: 3rem;
+  }
+  .home__data{
+    text-align: center; 
+  }
+  .home__subtitle{
+    font-size: 60px;
+    -webkit-text-stroke: 1px rgb(214, 177, 29);
+    /* color: transparent;  */
+  
+  }
+  .home__title{
+    /* color: transparent;  */
+    font-size: 60px;
+    font-weight: 700px;
+    -webkit-text-stroke: 1px rgb(205, 179, 15);
+  }
+  .home__subtitle,
+  .home__title{
+    letter-spacing: 1.5px;
+    margin-left: 50%;
+  }
+  .home__description{
+    font-size: 1.5em;
+    margin-bottom: 2.5rem;
+    margin-left: 25em;
+    /* margin-left: 35%; */
+  }
+  
+  .button{
+    /* display: inline; */
+    background-color: rgb(185, 83, 83);
+    padding: 18px 32px;
+    border: 2px solid black;
+    color: black;
+    /* font-weight: var(--font-bold); */
+    font-weight: 700px;
+    cursor: pointer;
+    transition: background .3s;
+  }
+  .button:hover{
+    background-color: var(--first-color-alt);
+  }
+  .button i{
+    font-size: 1.25rem;
+    transition: transform .3s;
+  }
+  .button__flex{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 50%;
+    /* justify-content: center; */
+    column-gap: .5rem;
+    border-radius: 8px;
+  
+  }
+  .button__flex:hover i {
+    transform: translateX(.25rem);
+  }
+  
+  .home-img.show {
+    opacity: 1;
+    transform: scale(1);
+  } 
+  .home__images img {
+    height: auto;
+    width: 51%;
+    margin-top: -28%;
+    position: absolute;
+    opacity: 0;
+    animation: imageAnimation 4s infinite;
+  }
+  
+  @keyframes imageAnimation {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .home__images img:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .home__images img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+     
+    }
+    .main{
+      margin-bottom: 10%;
+    }
+    .button{
+     
+      background-color: rgb(185, 83, 83);
+      padding: 10px 22px;
+      border: 2px solid black;
+      color: black;
+      
+      font-weight: 700px;
+      cursor: pointer;
+      transition: background .3s;
+    }
+    .button i{
+      font-size: 1.25rem;
+      transition: transform .3s;
+    }
+    .button__flex{
+      display: inline-flex;
+      align-items: center;
+      margin-left: 25%;
+     
+      column-gap: .5rem;
+      border-radius: 8px;
+    
+    }
+    .button__flex:hover i {
+      transform: translateX(.25rem);
+    }
+    .home__description {
+      font-size: 18px;
+      margin-bottom: 2.5rem;
+      margin-left: 25%;
+    }
+  
+  .home-img.show {
+    opacity: 1;
+    transform: scale(1);
+  } 
+  .home__images img {
+    height: auto;
+    width: 51%;
+  
+    position: absolute;
+    opacity: 0;
+    animation: imageAnimation 4s infinite;
+  }
+  
+  @keyframes imageAnimation {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .home__images img:nth-child(1) {
+    margin-left: 16rem;
+    margin-left: 33%;
+    margin-top: 3%;
+    animation-delay: 0s;
+  }
+  
+  .home__images img:nth-child(2) {
+    margin-left: 16rem;
+    margin-left: 33%;
+    margin-top: 3%;
+    animation-delay: 2s;
+  }
+  .home__subtitle{
+    font-size: 35px;
+    -webkit-text-stroke: 1px rgb(214, 177, 29);
+   
+  
+  }
+  .home__title{
+    /* color: transparent;  */
+    font-size: 20px;
+    font-weight: 300px;
+    -webkit-text-stroke: 1px rgb(205, 179, 15);
+  }
+  .home__subtitle,
+  .home__title{
+    letter-spacing: 1.px;
+    margin-left: 25%;
+  }
+  .home__description{
+    /* margin-right: 33%; */
+    font-size: 1em;
+    margin-bottom: 3em;
+  }
+  .home__data{
+    text-align: center; 
+  }
+  
+  }
+  
+  
+  
   
   .products img {
   
